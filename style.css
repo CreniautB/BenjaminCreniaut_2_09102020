@@ -1,6 +1,6 @@
 *
 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway-ExtraBold', sans-serif;
 }
 html
 {
@@ -165,8 +165,6 @@ header
 	margin-right: 10px;
 }
 
-
-
 #sectionTwo
 {
 	display: flex;
@@ -176,21 +174,24 @@ header
 
 #hebergement
 {
-	max-width: 900px;
+	max-width: 65%;
 	background-color: #F2F2F2;
 	padding: 2em; 
 	border-radius: 20px;
 	padding-top: 1em;
 }
 
-#popular
+#showMore
 {
-	max-width: 450px;
-	background-color: #F2F2F2;
-	height: 100px;
-	border-radius: 20px;
-	padding: 2em;
-	padding-top: 1em;
+	color: black;
+	font-weight: 900;
+	text-decoration: none;
+	font-size: 19px;
+}
+#showMore > h4
+{
+	margin: 0;
+	margin-left: 0.5em;
 }
 
 
@@ -198,6 +199,8 @@ header
 {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 2em;
 }
 
 .card
@@ -208,27 +211,60 @@ header
 	padding: 5px;
 	border-radius: 15px;
 	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+}
+
+.subCardContainer
+{
+	margin-left: 15px;
 }
 
 .card > a 
 {
 	text-decoration: none;
 }
-.card > a > h4 
+.titleHebergement 
 {
 	color: black;
+	font-weight: 700;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+	font-family: 'Raleway-Bold', sans-serif;
 }
-.card > a > div 
+.subCardContainer > span
 {
-	margin-top: 0.5em;
+	color: black;
+}
+
+
+.imgHebergementContainer
+{
+	height: 7em;
+	width: 17em;
+	overflow: hidden;
 }
 .imgHebergement
 {
-	height: 150px;
+	width: 17em;
 	border-radius: 15px;
+	height: auto;
 }
+
+
+.starsContainer
+{
+	margin-top: 0.2em;
+}
+
+ .starsContainer > i
+ {
+ 	color: #0065FC;
+ 	margin-top: 0.5em; 
+ 	font-size: 11px;
+ }
+
 
 #emptyStar
 {
@@ -236,21 +272,89 @@ header
 }
 
 
-
-
-
-
-
-
-@media (max-width: 640px)
+#popular
 {
-	#rightHeader
+	min-width: 23%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding: 2em;
+	padding-top: 1em;
+}
+#logoGraph
+{
+	float: right;
+}
+#cardPopularContainer
+{
+	margin-top: 2em;
+}
+
+.cardPopular
+{
+	margin: auto;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	padding: 5px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	margin-bottom: 2em;
+}
+.imgContainerSide
+{
+	height: 8em;
+	width: 8em;
+	overflow: hidden;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.imgContainerSide > img
+{
+	height: 9em;
+	width: auto;
+}
+
+.subSide
+{
+	margin-left: 1em;
+}
+.starsContainerPopular
+{
+	margin-top: 2em;
+}
+.starsContainerPopular > i
+{
+	color: #0065FC;
+ 	margin-top: 0.5em; 
+ 	font-size: 11px;
+}
+
+
+@media (max-width: 1300px)
+{
+	#sectionTwo
 	{
+		flex-direction: column-reverse;
+	}
+
+	#hebergement
+	{
+		margin-top: 3em;
+		min-width: 95%;
+	}
+
+	#cardPopularContainer
+	{
+		display: flex;
+		flex-wrap: wrap;
 	
 	}
-	#navHeader
+	.cardPopular
 	{
-	
+		max-width: 20em;
 	}
 
 }
