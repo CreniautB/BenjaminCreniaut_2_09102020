@@ -2,9 +2,9 @@
 {
 	font-family: 'Raleway-ExtraBold', sans-serif;
 }
-html
+html , body
 {
-
+	margin: 0;
 }
 
 header
@@ -242,12 +242,12 @@ header
 .imgHebergementContainer
 {
 	height: 7em;
-	width: 17em;
+	width: 15em;
 	overflow: hidden;
 }
 .imgHebergement
 {
-	width: 17em;
+	width: 15em;
 	border-radius: 15px;
 	height: auto;
 }
@@ -333,6 +333,91 @@ header
 }
 
 
+
+
+
+
+
+
+#sectionThree
+{
+	margin: 3em;
+}
+
+#activiteMarseille
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-height: 35em;
+}
+
+
+.hugeActiviteContainer
+{
+	width: 25%;
+}
+.littleActiviteContainer
+{
+	width: 25%;
+}
+
+.hugeActiviteContainer > figure
+{
+	overflow: hidden;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+}
+
+.littleActiviteContainer > figure
+{
+	overflow: hidden;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	margin: 1.5em;
+}
+	
+.hugeActiviteContainer > figure > img
+{
+
+}
+
+.littleActiviteContainer > figure > img
+{
+
+
+}
+
+
+figcaption
+{
+	margin: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+figure
+{
+	margin: 0;
+}
+
+
+
+#sectionFour
+{
+	background-color: #F2F2F2;
+}
+
+
+
+
+
+
 @media (max-width: 1300px)
 {
 	#sectionTwo
@@ -356,5 +441,10 @@ header
 	{
 		max-width: 20em;
 	}
+	#activiteMarseille
+	{
+		flex-direction: row;
+	}
 
 }
+
