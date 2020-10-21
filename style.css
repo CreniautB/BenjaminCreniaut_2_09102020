@@ -10,26 +10,21 @@ html , body
 header
 {
 	margin: 3em;
-	display: flex;
-	justify-content: space-between;
+	line-height: 3em;
+	text-align: right;
 }
 #logo
 {
 	height: 3em;
+	float: left;
 }
 
-#rightHeader
+header > nav > a
 {
-	display: flex;
-	flex-direction: row-reverse;
-	margin: 1em;
-}
-
-#navHeader > a
-{
-	color: black;
 	text-decoration: none;
-	padding-left: 2em;
+	margin-right: 3em;
+	font-size: 1.25em;
+	color: black;
 }
 
 #inscrire
@@ -37,10 +32,12 @@ header
 	color: #0065FC;
 	text-decoration: none;
 	font-weight: bold;
-	padding-left: 2em;
+	float: right;
+	font-size: 1.25em;
+
 }
 
-
+/** SECTION ONE **********************************/
 
 #sectionOne
 {
@@ -165,6 +162,12 @@ header
 	margin-right: 10px;
 }
 
+
+/** SECTION TWO ************************/
+
+
+
+
 #sectionTwo
 {
 	display: flex;
@@ -271,6 +274,8 @@ header
 	color: #F2F2F2;
 }
 
+/** POPULAR ASIDE *********************************/
+
 
 #popular
 {
@@ -337,7 +342,7 @@ header
 
 
 
-
+/** SECTION THREE ********************/
 
 #sectionThree
 {
@@ -404,7 +409,7 @@ figure
 	margin: 0;
 }
 
-
+/** SECTION FOUR **************************/
 
 #sectionFour
 {
@@ -459,6 +464,61 @@ figure
 	}
 
 	#sectionThree
+	{
+
+	}
+}
+
+@media (max-width: 600px)
+{
+	body, html
+	{
+		overflow-x: hidden;
+	}
+	header
+	{
+		margin: 1em;
+		text-align: center;
+
+	}
+	header > nav
+	{
+		padding-top: 4em;
+	}
+	header > nav > a
+	{
+		margin: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	#sectionTwo
+	{
+		margin: 0;
+	}
+	#filerSection
+	{
+	
+	}
+	.filterContainer
+	{
+		margin: 0;
+		margin-top: 0.5em;
+	}
+	#filterTitle
+	{
+		width: 100%;
+	}
+
+	#popular
+	{
+		
+	}
+	.cardPopular
+	{
+		
+	}
+	#cardPopularContainer
 	{
 
 	}
