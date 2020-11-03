@@ -25,6 +25,12 @@ header > nav > a
 	margin-right: 3em;
 	font-size: 1.25em;
 	color: black;
+
+
+}
+header > nav > a:hover
+{
+	color: #0065FC;
 }
 
 #inscrire
@@ -37,9 +43,9 @@ header > nav > a
 
 }
 
-/** SECTION ONE **********************************/
+/** SubHeader **********************************/
 
-#sectionOne
+#subHeader
 {
 	margin : 3em;
 }
@@ -172,7 +178,7 @@ header > nav > a
 
 
 
-#sectionTwo
+#hebergementPopulaire
 {
 	display: flex;
 	margin : 3em;
@@ -267,7 +273,7 @@ header > nav > a
  }
 
 
-#emptyStar
+.emptyStar
 {
 	color: #F2F2F2;
 }
@@ -337,7 +343,7 @@ header > nav > a
 
 /** SECTION THREE ********************/
 
-#sectionThree
+#activite
 {
 	margin: 3em;
 	margin-top: 5em;
@@ -415,7 +421,7 @@ figure
 
 /** SECTION FOUR **************************/
 
-#sectionFour
+footer
 {
 	background-color: #F2F2F2;
 	display: flex;
@@ -424,15 +430,15 @@ figure
 	padding-right: 15em;
 }
 
-#sectionFour > ul
+footer > ul
 {	
 	list-style: none;
 }
-#sectionFour > ul > li
+footer > ul > li
 {
 	margin : 1em;
 }
-#sectionFour > ul > li > h3
+footer > ul > li > h3
 {
 	font-weight: bolder;
 }
@@ -440,7 +446,7 @@ figure
 
 @media (max-width: 1400px)
 {
-	#sectionTwo
+	#hebergementPopulaire
 	{
 		flex-direction: column-reverse;
 	}
@@ -482,41 +488,66 @@ figure
 	{
 		margin-bottom: 2em;;
 	}
-	}
-	
+}
 
 
 
 
 
 
-@media (max-width: 750px)
+
+@media (max-width: 760px)
 {
 	body, html
 	{
 		overflow-x: hidden;
 	}
+	#logo
+	{
+		position: absolute;
+		top: 1.2em;
+		left: 1.2em;
+	}
 	header
 	{
 		margin: 1em;
 		text-align: center;
-
 	}
 	header > nav
 	{
-		padding-top: 4em;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		padding: 0;
 	}
 	header > nav > a
 	{
-		margin: 0;
-		padding-left: 1em;
-		padding-right: 1em;
+		margin: auto;
+		width: 50%;
+		line-height: 60px;
+		border-bottom: 1px solid grey;	
+
 	}
-	#sectionOne
+	header > nav > a:hover
+	{
+		border-top: none;
+		border-bottom: solid 1px #0065FC;
+	}
+
+	#inscrire
+	{
+		width: 100%;
+		text-align: right;
+		border-bottom: none;
+	}
+
+	
+	#subHeader
 	{
 		margin : 1em;
+		margin-bottom: 2em;
 	}
-	#sectionOne > div > h2
+	#subHeader > div > h2
 	{
 		font-size: 1.5em;
 	}
@@ -558,8 +589,12 @@ figure
 		width: 100%;
 	}
 
+	#hebergement 
+	{
+		padding: 0;
+	}
 
-	#sectionTwo
+	#hebergementPopulaire
 	{
 		margin: 0;
 	}
@@ -567,14 +602,20 @@ figure
 	#popular
 	{
 		border-radius: 0;
-		padding: 1em; 
+		padding: 1em;
+		margin-left: 0;
+		margin-bottom: 1em;
 
 	}
 	.cardPopular
 	{
 		margin-bottom: 1em;
 	}
-
+	.starsContainerPopular
+	{
+	margin-top: 2em;
+	}
+	
 
 	#hebergement > h2
 	{
@@ -589,7 +630,8 @@ figure
 		margin: auto;
 		margin-bottom: 1em;
 		overflow: hidden;
-		width: 45%;
+	
+		width: 90%;
 	}
 	.imgHebergementContainer
 	{
@@ -606,7 +648,46 @@ figure
 		margin : 1.5em;
 	}
 
-	#sectionFour
+	#activite
+	{
+		margin : 1em;
+		margin-bottom: 3em;
+	}
+
+
+
+	.column 
+	{
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+	
+	.littleActiviteContainer > figure 
+	{
+		height: 150px;
+		margin-top: 1.5em;
+		margin-bottom: 0;
+	}
+	.littleActiviteContainer > figure > img
+	{
+		height: 70%!important;
+	}
+	.hugeActiviteContainer > figure
+	{
+		height: 150px;
+		margin-top: 1.5em;
+		margin-bottom: 0;
+	}
+	.hugeActiviteContainer > figure > img
+	{
+		height: 70%!important;
+	}
+		
+
+
+	footer
 	{
 		display: block;
 		width: 100%;
@@ -614,34 +695,8 @@ figure
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	  }
-	.hugeActiviteContainer > figure
-	{
-		height: 16em;
-	}
-	.hugeActiviteContainer > figure > img
-	{
-		height: 80%!important;
-	}
-		
-	.littleActiviteContainer > figure
-	{
-		margin-bottom: 2em;
-	}
-
 
 }
 
-@media (max-width: 750px)
-{
-	.card 
-	{
-		width: 85%;
-	}
-}
 
 
