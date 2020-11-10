@@ -82,6 +82,12 @@ header > nav > a:hover
 {
 	border: none;
 }
+#site-search::placeholder
+{
+	font-weight: bold;
+	color: black;
+	font-size: 16px;
+}
 
 #search > label
 {
