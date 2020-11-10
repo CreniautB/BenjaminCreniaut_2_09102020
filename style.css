@@ -138,6 +138,11 @@ header > nav > a:hover
 	margin-top: 1em;
 	border-radius: 1em;
 }
+.filterContainer:hover{
+	color: #0065FC;
+	transform: scale(1.1);
+	transition : transform ease-in-out 0.2s;
+}
 
 .filterContainer > i
 {
@@ -281,10 +286,6 @@ header > nav > a:hover
  }
 
 
-.emptyStar
-{
-	color: #F2F2F2;
-}
 
 /** POPULAR ASIDE *********************************/
 
@@ -318,6 +319,7 @@ header > nav > a:hover
 	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
 	margin-bottom: 2em;
+	text-decoration: none;
 }
 
 .cardPopular > img
@@ -333,6 +335,7 @@ header > nav > a:hover
 {
 	margin-left: 1em;
 }
+
 .starsContainerPopular
 {
 	margin-top: 3.5em;;
@@ -342,6 +345,11 @@ header > nav > a:hover
 	color: #0065FC;
  	margin-top: 0.5em; 
  	font-size: 11px;
+}
+
+.emptyStar
+{
+	color: #d9d9d9!important;
 }
 
 
